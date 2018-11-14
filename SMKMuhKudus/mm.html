@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>firas</title>
+	<style type="text/css">
+		.background{
+			background-image: url(country-quilt.png);
+			width: 1350px;
+			height: 900px;
+			overflow: hidden;
+		}
+		.kepala{
+			background-color: lightblue;
+			width: 1100px;
+			height: 160px;
+			overflow: auto;
+			margin: auto;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		.logo{
+			background-color: yellow;
+			width: 180px;
+			height: 130px;
+			border-radius: 10px;
+			margin-top: 16px;
+			margin-left: 20px;
+			display: inline-block;
+			overflow: hidden;
+		}
+		.judul{
+			background-color: blue;
+			width: 850px;
+			height: 130px;
+			display: inline-block;
+			border-radius: 10px;
+			font-family: sans-serif;
+			text-align: center;
+			overflow: hidden;
+			/*line-height: 80px;*/
+		}
+		h1{
+			color: black;
+			line-height: 70px;
+		}
+		h5{
+			line-height: -80px;
+			margin-top: -25px;
+		}
+		.leher{
+			background-color: blue;
+			width: 1100px;
+			height: 50px;
+			margin: auto;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+		li.home{
+			letter-spacing: 2px;
+			margin-left: 50px;
+		}
+		li{
+			list-style: none;
+			display: inline-block;
+			border: 2px solid #004d00;
+			border-radius: 5px;
+			padding-right: 7px;
+			padding-left: 9px;
+			margin-bottom: 200px;
+			margin-left: 130px;
+			margin-right: 141px;
+			line-height: 20px;
+			background-color: #66ff66;
+			box-shadow: 2px 2px;
+			text-shadow: 1px 0px;
+			grid-row: 20px;
+		}
+		li:nth-child(2), li:nth-child(3){
+			padding-left: 5px;
+
+		}
+		li:hover{
+			background-color: #33ff33;
+			cursor: pointer;
+		}
+		li.guru{
+			letter-spacing: 2px;
+			padding-right: 5px;
+			margin-left: 215px;
+		}
+		li.about{
+			letter-spacing: 2px;
+			margin-left: 115px;
+		}
+		.halaman{
+			background-color: aqua;
+			width: 1100px;
+			height: 700px;
+			margin: auto;
+		
+		}
+		.widget{
+			background-color: #0000CD;
+			width: 350px;
+			height: 243px;
+			margin-left: 20px;
+			margin-top: 20px;
+			display: inline-block;
+			float: left;
+		}
+		.latar{
+			background-color: lightgrey;
+			width: 670px;
+			height: 650px; 
+			border-radius: 20px;
+			display: inline-block;
+			margin-left: 30px;
+			bottom: 100px;
+			margin-top: 20px;
+		}
+		.widget img{
+			width: 220px;
+			height: 195px;
+			border-radius: 5px;
+			margin-left: 14px;
+			margin-top: 0px;
+			margin-left: 65px;
+		}
+		.kepalawidget{
+			background-color: #00008B;
+			width: 350px;
+			height: 50px;
+			margin-top: -20px;
+		}
+		.kepalawidget b{
+			font-size: 16px;
+			padding-left: 51px;
+			color: white;
+			line-height: 50px;
+		}
+		.kompetensikeahlian{
+			background-color: #00008B;
+			width: 350px;
+			height: 50px;
+			margin-top: 50px;
+		}
+		.kompetensikeahlian b{
+			margin-left: 90px;
+			line-height: 50px;
+			font-size: 18px;
+			color: white;
+		}
+		.isikompetensikeahlian{
+			background-color: blue;
+			width: 350px;
+			height: 300px;
+			overflow: hidden;
+		}
+		.isikompetensikeahlian h4{
+			color: white;
+			font-size: 18px;
+			padding-left: 20px;
+
+		}
+		.beritabaru{
+			background-color: blue;
+			width: 670px;
+			height: 60px;
+			border-radius: 10px 10px 0px 0px;
+			overflow: hidden;
+		}
+		.beritabaru h4{
+			color: white;
+			padding-left: 40px;
+			line-height: 10px;
+			font-size: 20px;
+		}
+		.latar img{
+			width: 150px;
+			height: 130px;
+			border-radius: 15px;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.latar b{
+			margin-left: 20px;
+			margin-top: 20px;
+			line-height: 60px;
+		}
+		.latar p{
+			margin-left: 20px;
+			font-weight: bold;
+		}
+		.tanggal{
+			margin-top: -35px;
+		}
+		.tanggal img{
+			float: left;
+			width: 160px;
+			height: 160px;
+			margin-top: 7px;
+		}
+		.tanggal u{
+			line-height: 10px;
+			margin-top: -5px;
+		}
+		.tanggal p{
+			padding-top: 24px;
+		}
+		.terbaru{
+			display: inline-block;
+		}
+		.terbaru img{
+			width: 190px;
+			height: 165px;
+			margin-top: 1px;
+			margin-bottom: -3px;
+			margin-left: -0px;
+			border-radius: 1px;
+		}
+		.terbaru u{
+			padding-left: 15px;
+			line-height: 20px;
+			padding-top: 3px;
+		}
+		.terbaru p{
+			line-height: 0px;
+			margin-top: -10px;
+		}
+		hr{
+			width: 668px;
+		}
+		.terbaru table{
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		td{
+			padding-left: 10px;
+			line-height: 20px;
+		}
+		.terbaru{
+			padding-left: 20px;
+			padding-top: 20px;
+			padding-right: 20px;
+		}
+		.isikompetensikeahlian a{
+			color: white;
+		}
+		
+	</style>
+	<script type="text/javascript" src="jquery3.min.js">
+	</script>
+</head>
+<body>
+<div class="background">
+	<div class="kepala">
+		<div class="logo">
+			<img src="logo smk.jpg" width="180" height="130">
+		</div>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="judul">		
+			<h1>SMK MUHAMMADIYAH KUDUS</h1>
+			<h5>SMK BISA 3x<br>
+			SMK MUHAMMADIYAH KUDUS JAWARA</h5>
+		</div>
+	</div>
+	<div class="leher">
+		<ul>
+			<li class="home"><a href="tugas.html">Home</a></li>
+			<li class="guru"><a href="pengajar.html">Pengajar</a></li>
+			<li class="about"><a href="about us.html">About Us</a></li>
+		</ul>
+	</div>
+	<div class="halaman">
+		<div class="widget">
+			<br>
+			<div class="kepalawidget">
+			<b>Profil &nbsp; SMK &nbsp;Muhammadiyah Kudus</b>
+			</div>
+			<img src="profil smk.jpg">
+			<div class="kompetensikeahlian">
+					<b>Kompetensi Keahlian</b>
+			</div>
+			<div class="isikompetensikeahlian">
+				<h4><a href="tav.html">TAV (Teknik Audio Video)</a></h4>
+				<h4><a href="tkr.html">TKR (Teknik Kendaraan Ringan)</a></h4>
+				<h4><a href="tkj.html">TKJ (Teknik Komputer Jaringan)</a></h4>
+				<h4><a href="mm.html">MM (Multimedia)</a></h4>
+				<h4><a href="tsm.html">TSM (Teknik Sepeda Motor)</a></h4>
+				<h4><a href="tp.html">TP (Teknik Pemesinan)</a></h4>
+			</div>
+		</div>
+		<div class="latar">
+			<div class="beritabaru">
+				<h4>Pengajar</h4>
+			</div>
+			<div class="terbaru">
+			
+			<h3>MM (MultiMedia)</h3>
+			<br>
+			MultiMedia adalah jurusan yang berhubungan dengan editing editing.
+			<br><br>
+			Kalau anda memilih jurusan ini, dijamin pasti anda akan bisa mengedit semua jenis gambar, video foto dll, Dan di jurusan ini anda tidak perlu susah susah, tidak perlu pake tenaga karena anda cuma di bekali sebuah komputer. Anda pasti tidak akan kecewa bila masuk ke jurusan ini.
+		</div>
+	</div>
+</div>
+</body>
+</html>
